@@ -22,8 +22,6 @@ npm install tr-dictionary-advanced
 
 > Modülün kullanımı açıklamasında da bahsedildiği üzere oldukça basit, fakat modülün çalışma yapısı asenkron yapıda olduğu için modülü kullanırken "async-await" veya ".then()" yapılarını kullanmanız gerekiyor.
 
-## **Örnek Kullanımlar:**
-
 Sözlükte kelime aratma:
 ---
 ```js
