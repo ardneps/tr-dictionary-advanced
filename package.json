@@ -1,0 +1,29 @@
+{
+  "name": "tr-dictionary-advanced",
+  "version": "1.0.0",
+  "description": "Tercih ettiğiniz herhangi bir kelimenin/atasözünün/deyimin/terim anlamlı sözcüğün/kişi adının TDK sözlüğündeki bilgilerine kolayca ulaşmanızı sağlayacak bir NPM modülü!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkayfazlioglu/tr-dictionary-advanced.git"
+  },
+  "keywords": [
+    "tr-dictionary",
+    "tr-sozluk",
+    "tr",
+    "türkçe",
+    "turkish",
+    "tdk",
+    "tdk-api",
+    "sozluk",
+    "sozluk-api"
+  ],
+  "author": "berkayfazlioglu",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
