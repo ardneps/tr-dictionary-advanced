@@ -9,7 +9,7 @@
 | Özellik | tr-dictionary | tr-dictionary-advanced |
 |:--------|:--------------|:-----------------------|
 | Yapılabilecekler | Sözlükte kelime aratma | Sözlükte kelime, atasözü/deyim, terim anlamlı sözcük, kişi adı aratma |
-| Kelime aratma | Kelimenin birinci, ikinci ve üçüncü anlamı; fiil, çoğul, özel olup olmadığı; kökeni, kelimenin kullandığı cümle ve atasözü/deyim örneği | tr-dictionary'de olanların tümü + kelimenin telaffuzunun bulunduğu ses dosyası bağlantısı (.wav formatında) ve kelimenin yalın hali |
+| Kelime aratma | Kelimenin yalın hali, kelimenin birinci, ikinci ve üçüncü anlamı; fiil, çoğul, özel olup olmadığı; kökeni, kelimenin kullandığı cümle ve atasözü/deyim örneği | tr-dictionary'de olanların tümü + kelimenin telaffuzunun bulunduğu ses dosyası bağlantısı (.wav formatında) |
 | Atasözü/Deyim aratma | Yok | Sözün yalın hali, sözün anlamı, sözün çeşidi (atasözü/deyim), sözün içerisindeki anahtar kelimeler |
 | Terim anlamlı sözcük aratma | Yok | Kelimenin yalın hali, kelimenin terim anlamı; kelimenin İngilizce, Almanca, Fransızca ve Latince karşılığı |
 | Kişi adı aratma | Yok | Kişi adının yalın hali, anlamı ve genellikle kullanıldığı cinsiyet |
@@ -140,7 +140,7 @@ myDictionary("arda");
 
 # Lisans
 
-- [MIT](https://github.com/berkayfazlioglu/tr-dictionary-advanced/blob/master/LICENSE)
+- [MIT](https://github.com/ardneps/tr-dictionary-advanced/blob/master/LICENSE)
 
 [package-url]: http://npmjs.org/package/tr-dictionary-advanced
 [package-image]: https://badge.fury.io/js/tr-dictionary-advanced.svg
