@@ -1,8 +1,6 @@
-# 📖 tr-dictionary-advanced
+# tr-dictionary-advanced
 
-[![package-image]][package-url]  [![License: MIT][license-image]][license-url] [![install-image]][install-url] [![Awesome Badges][badges-image]][badges-url] [![made-with-Markdown][markdown-image]][markdown-url]
-
-[![NPM][npm-image]][npm-url]
+[![package-image]][package-url]  [![install-image]][install-url]
 
 # tr-dictionary ve tr-dictionary-advanced Arasındaki Farklar
 

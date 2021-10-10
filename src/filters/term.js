@@ -7,7 +7,7 @@ module.exports = async (data) => {
     const fransizca = (fransiz) ? fransiz : "Bu kelimenin bir Fransızca karşılığı bulunmuyor.";
     const latince = (latin) ? latin : "Bu kelimenin bir Latince karşılığı bulunmuyor.";
 
-    const json = {
+    return {
         kelime: sozcuk,
         anlam: anlam,
         ingilizce: ingilizce,
@@ -15,7 +15,4 @@ module.exports = async (data) => {
         fransizca: fransizca,
         latince: latince
     };
-
-    return json;
-
 };

@@ -7,42 +7,28 @@ const term_filter = require("./filters/term");
 const name_filter = require("./filters/name");
 
 const getMeaning = async (query) => {
-
     const response = await sendRequest("gts?", query);
-    const data = meaning_filter(response);
-    return data;
-
+    return meaning_filter(response);
 };
 
 const getSaying = async (query) => {
-
     const response = await sendRequest("atasozu?", query);
-    const data = saying_filter(response);
-    return data;
-
+    return saying_filter(response);
 };
 
 const getTermMeaning = async (query) => {
-
     const response = await sendRequest("terim?eser_ad=t%C3%BCm%C3%BC&", query);
-    const data = term_filter(response);
-    return data;
-
+    return term_filter(response);
 };
 
 const getNameMeaning = async (query) => {
-
     const response = await sendRequest("adlar?gore=1&cins=4&", query);
-    const data = name_filter(response);
-    return data;
-
+    return name_filter(response);
 };
 
 module.exports = {
-
-    getMeaning: getMeaning,
-    getSaying: getSaying,
-    getTermMeaning: getTermMeaning,
-    getNameMeaning: getNameMeaning,
-
+    getMeaning,
+    getSaying,
+    getTermMeaning,
+    getNameMeaning,
 };

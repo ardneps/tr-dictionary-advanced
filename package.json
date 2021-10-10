@@ -1,6 +1,6 @@
 {
   "name": "tr-dictionary-advanced",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tercih ettiğiniz herhangi bir kelimenin/atasözünün/deyimin/terim anlamlı sözcüğün/kişi adının TDK sözlüğündeki bilgilerine kolayca ulaşmanızı sağlayacak bir NPM modülü!",
   "main": "index.js",
   "scripts": {

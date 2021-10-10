@@ -5,16 +5,14 @@ const { getAudio, getSpelling, sendRequest } = util;
 
 module.exports = async (data) => {
 
-    const { madde_duz, anlamlarListe, ozel_mi, cogul_mu, lisan, atasozu } = data[0];
+    const [{ madde_duz, anlamlarListe, ozel_mi, cogul_mu, lisan, atasozu }] = data;
 
-    const firstMeaningList = anlamlarListe[0];
-    const secondMeaningList = anlamlarListe[1];
-    const thirdMeaningList = anlamlarListe[2];
+    const [firstMeaningList, secondMeaningList, thirdMeaningList] = anlamlarListe;
 
     const { orneklerListe, fiil } = firstMeaningList
 
     const exampleList = orneklerListe;
-    const sayingList = atasozu[0];
+    const [sayingList] = atasozu;
 
     const firstMeaning = (firstMeaningList) ?
         firstMeaningList.anlam : "Bu kelimenin bir anlamı bulunmuyor.";
@@ -25,11 +23,11 @@ module.exports = async (data) => {
     const thirdMeaning = (thirdMeaningList) ?
         thirdMeaningList.anlam : "Bu kelimenin üçüncü bir anlamı bulunmuyor.";
 
-    const isVerb = (fiil == 1) ? true : false;
+    const isVerb = Boolean(Number(fiil));
 
-    const isSpecial = (ozel_mi == 1) ? true : false;
+    const isSpecial = Boolean(Number(ozel_mi));
 
-    const isPlural = (cogul_mu == 1) ? true : false;
+    const isPlural = Boolean(Number(cogul_mu));
 
     const origin = (lisan) ? lisan : "Türkçe";
 
@@ -40,7 +38,7 @@ module.exports = async (data) => {
 
     const audio = await getAudio(madde_duz, getSpelling, spelling_filter, sendRequest);
 
-    const json = {
+    return {
         kelime: madde_duz,
         anlam: firstMeaning,
         ikinci_anlam: secondMeaning,
@@ -53,7 +51,5 @@ module.exports = async (data) => {
         atasozu_deyim: saying,
         sesURL: audio,
     };
-
-    return json;
 
 };
